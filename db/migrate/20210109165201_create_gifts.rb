@@ -4,6 +4,7 @@ class CreateGifts < ActiveRecord::Migration[6.1]
       t.references :user, null: false, foreign_key: true
       t.references :list, null: false, foreign_key: true
       t.string :name
+      t.binary :image
       t.string :url
       t.string :notes
       t.boolean :bought
