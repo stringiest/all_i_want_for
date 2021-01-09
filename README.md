@@ -21,8 +21,8 @@ This project was conceived to enable me to practice using Ruby on Rails, followi
 
 ```
 As a user
-So that I can use 'All I Want For'
-I want to be able to register for an account
+So that I can set up gift lists
+I want to be able to register for 'All I Want For'
 ```
 
 ```
@@ -69,20 +69,8 @@ I want to be able to generate a link to my list
 
 ```
 As a user
-So that I can keep up to date with my friends' gift ideas
-I want to be able to add friends
-```
-
-```
-As a user
-So that I can buy a gift
-I want to be able to view my friends' lists
-```
-
-```
-As a user
 So that I don't receive duplicate gifts
-I want my friends to be able to mark gifts as bought
+I want people to be able to mark gifts as bought
 ```
 
 ```
@@ -99,12 +87,24 @@ I want to be able to archive old lists
 
 ```
 As a user
-So that I don't forget my friends' birthdays
-I want to receive a reminder email
+So that I only receive relevant gifts
+I want to receive a reminder to update my list a month before my birthday
 ```
 
 ```
 As a user
-So that I only receive relevant gifts
-I want to receive a reminder to update my list a month before my birthday
+So that I can keep up to date with my friends' gift ideas
+I want to be able to add friends
+```
+
+```
+As a user
+So that I can buy a gift
+I want to be able to view my friends' lists
+```
+
+```
+As a user
+So that I don't forget my friends' birthdays
+I want to receive a reminder email
 ```
