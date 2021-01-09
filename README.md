@@ -45,8 +45,26 @@ I want to be able to create a gift list
 
 ```
 As a user
+So that I can request gifts
+I want to be able to add items to my gift list
+```
+
+```
+As a user
+In case the details change
+I want to be able to amend items on my gift list
+```
+
+```
+As a user
+In case I buy things for myself
+I want to be able to delete items from my gift list
+```
+
+```
+As a user
 So that I can let my friends & family know what I want
-I want to be able to send them a link to my list
+I want to be able to generate a link to my list
 ```
 
 ```
@@ -65,6 +83,18 @@ I want to be able to view my friends' lists
 As a user
 So that I don't receive duplicate gifts
 I want my friends to be able to mark gifts as bought
+```
+
+```
+As a user
+So that I can manage my lists
+I want to be able to move items between lists
+```
+
+```
+As a user
+So that I can keep my lists relevant
+I want to be able to archive old lists
 ```
 
 ```
