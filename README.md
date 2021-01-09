@@ -12,16 +12,18 @@ Entity relationship diagram for tables excluding friendships:
 ![Entity relationship diagram for tables excluding friendships](/app/assets/images/ERD_excl_friendships.png)
 
 ### Planning Notes
-* Rails project
-* Linted with Rubocop
-* Tested with Rspec & Capybara
+* Rails project ✅
+* Linted with Rubocop ✅
+* Tested with Rspec & Capybara ✅
 * Test coverage checked using SimpleCov
 * CI through Travis CI or Git Actions
 * Styled using Bootstrap - investigate using colour palettes
-* Deployed via Heroku
-* Progress tracked via Github Projects
+* Deployed via Heroku ✅
+* Progress tracked via Github Projects ✅
 
 ### User Stories
+
+#### Minimum Viable Product:
 
 ```
 As a user
@@ -52,6 +54,8 @@ As a user
 So that I can request gifts
 I want to be able to add items to my gift list
 ```
+
+#### Second tranche:
 
 ```
 As a user
@@ -94,6 +98,8 @@ As a user
 So that I only receive relevant gifts
 I want to receive a reminder to update my list a month before my birthday
 ```
+
+#### Third Tranche
 
 ```
 As a user
