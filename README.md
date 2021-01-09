@@ -7,6 +7,10 @@ This project was conceived to enable me to practice using Ruby on Rails, followi
 
 ### Entity Relationship Diagrams
 
+Entity relationship diagram for tables excluding friendships:
+
+![Entity relationship diagram for tables excluding friendships](ERD_excl_friendships.png)
+
 ### Planning Notes
 * Rails project
 * Linted with Rubocop
