@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  list: one
+  name: MyString
+  url: MyString
+  notes: MyString
+  bought: false
+  bought_by: MyString
+
+two:
+  user: two
+  list: two
+  name: MyString
+  url: MyString
+  notes: MyString
+  bought: false
+  bought_by: MyString
