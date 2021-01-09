@@ -12,14 +12,10 @@
 
 ActiveRecord::Schema.define(version: 2021_01_09_165201) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "gifts", force: :cascade do |t|
-    t.bigint "user_id", null: false
-    t.bigint "list_id", null: false
+    t.integer "user_id", null: false
+    t.integer "list_id", null: false
     t.string "name"
-    t.binary "image"
     t.string "url"
     t.string "notes"
     t.boolean "bought"
@@ -31,7 +27,7 @@ ActiveRecord::Schema.define(version: 2021_01_09_165201) do
   end
 
   create_table "lists", force: :cascade do |t|
-    t.bigint "user_id", null: false
+    t.integer "user_id", null: false
     t.string "name"
     t.date "event_date"
     t.boolean "archived"
