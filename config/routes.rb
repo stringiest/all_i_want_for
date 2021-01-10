@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  root 'users#new'
+  root 'welcome#index'
 
-  get 'users/new'
-  post 'users' => 'users#welcome'
+  resources :users, only: [:new, :create]
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
