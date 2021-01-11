@@ -9,8 +9,7 @@ class UsersController < ApplicationController
 
     if @user.save
       flash[:notice] = 'Successfully signed up'
-      redirect_to root_path # temporary redirect until sessions set up, then use below redirect
-      # redirect_to new_session_url
+      redirect_to new_session_url
     else
       render 'new'
     end
