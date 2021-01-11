@@ -10,7 +10,7 @@ feature 'registration' do
     fill_in('password confirmation', with: '2020')
     click_button('Sign Up')
 
-    expect(current_path).to eq('/') # will need to change this once sessions set up
+    expect(current_path).to eq('/sessions/new') # will need to change this once sessions set up
     expect(page).to have_content('Successfully signed up')
   end
 
