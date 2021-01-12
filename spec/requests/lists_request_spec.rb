@@ -2,5 +2,5 @@
 
 require 'rails_helper'
 
-RSpec.describe 'Sessions', type: :request do
+RSpec.describe 'Lists', type: :request do
 end
