@@ -13,7 +13,7 @@
 
   <body>
     <nav class="navbar">
-      <a href="/posts" class="navbar-brand"><img src="<%=asset_path('AllIWantFor-logo.png')%>" alt="zuckerBook"></a>
+      <a href="/lists" class="navbar-brand"><img src="<%=asset_path('AllIWantFor-logo.png')%>" alt="zuckerBook"></a>
       <div>
         <% if current_user %>
         <span>
@@ -29,7 +29,7 @@
     </nav>
 
     <% flash.each do |type, msg| %>
-      <div class="alert alert-danger text-center mx-auto" role="alert" style="width: 98.38%;">
+      <div class="alert alert-info text-center mx-auto" role="alert" style="width: 98.38%;">
         <%= msg %>
       </div>
     <% end %>
