@@ -22,14 +22,14 @@ Entity relationship diagram for tables excluding friendships:
 ![Entity relationship diagram for tables excluding friendships](/app/assets/images/ERD_excl_friendships.png)
 
 ### Planning Notes
-* Rails project ✅
-* Linted with Rubocop ✅
-* Tested with Rspec & Capybara ✅
-* Test coverage checked using SimpleCov ✅
-* CI through Travis CI ✅
-* Styled using Bootstrap - investigate using colour palettes
-* Deployed via Heroku ✅
-* Progress tracked via Github Projects ✅
+- [x] Rails project
+- [x] Linted with Rubocop
+- [x] Tested with Rspec & Capybara
+- [x] Test coverage checked using SimpleCov
+- [x] CI through Travis CI
+- [ ] Styled using Bootstrap - investigate using colour palettes
+- [x] Deployed via Heroku
+- [x] Progress tracked via Github Projects
 
 ### User Stories
 
