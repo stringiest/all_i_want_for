@@ -26,7 +26,7 @@ Entity relationship diagram for tables excluding friendships:
 * Linted with Rubocop ✅
 * Tested with Rspec & Capybara ✅
 * Test coverage checked using SimpleCov ✅
-* CI through Travis CI or Git Actions
+* CI through Travis CI ✅
 * Styled using Bootstrap - investigate using colour palettes
 * Deployed via Heroku ✅
 * Progress tracked via Github Projects ✅
