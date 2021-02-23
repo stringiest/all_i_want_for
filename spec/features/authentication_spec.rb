@@ -36,4 +36,13 @@ feature 'authentication' do
     expect(current_path).to eq('/sessions')
     expect(page).to have_content('Invalid login details')
   end
+
+  scenario 'user logs out successfully' do
+    create_user_in_test_db
+    login_successfully
+    click_link('Sign Out')
+
+    expect(current_path).to eq('/sessions/new')
+    expect(page).to have_content('Successfully signed out')
+  end
 end

@@ -3,6 +3,16 @@ Personal project to build a website where users can create & share gift wish lis
 
 This project was conceived to enable me to practice using Ruby on Rails, following a Makers group project using the same stack.
 
+## Quick Start
+
+1. Clone this repo
+2. cd into the new folder
+3. run `bundle install`
+4. create the development and test databases in postgresql
+5. run `rails db:migrate` to run migrations on database
+6. run `npm install`
+7. install yarn `npm install yarn -g`
+
 ## Planning
 
 ### Entity Relationship Diagrams
