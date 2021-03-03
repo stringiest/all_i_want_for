@@ -9,6 +9,12 @@
           null
         ]
       },
+      "/home/lucy/Projects/all_i_want_for/app/helpers/gifts_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/home/lucy/Projects/all_i_want_for/app/helpers/lists_helper.rb": {
         "lines": [
           null,
@@ -115,7 +121,7 @@
           1,
           null,
           1,
-          77,
+          70,
           null,
           null
         ]
@@ -136,10 +142,12 @@
           1,
           null,
           1,
-          10,
+          8,
           null,
           null,
           1,
+          0,
+          null,
           null,
           1,
           5,
@@ -158,8 +166,8 @@
           1,
           null,
           1,
-          2,
-          2,
+          0,
+          0,
           null,
           0,
           null,
@@ -173,11 +181,11 @@
           1,
           null,
           1,
-          6,
+          4,
           null,
           null,
           1,
-          2,
+          0,
           null,
           null
         ]
@@ -220,8 +228,69 @@
           null,
           null
         ]
+      },
+      "/home/lucy/Projects/all_i_want_for/app/controllers/gifts_controller.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1614100293
+    "timestamp": 1614796803
   }
 }

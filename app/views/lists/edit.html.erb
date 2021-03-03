@@ -1,3 +1,7 @@
 <h1 class="text-center" style="font-weight: lighter;"> Edit list details </h1>
 
 <%= render "form", list: @list %>
+
+<div class="card mx-auto text-center px-4 pt-4 pb-3 mt-5" style="width: 375px;">
+    <%= link_to 'Add Gift', new_gift_path, class: "btn btn-primary" %>
+</div>

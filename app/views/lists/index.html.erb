@@ -19,7 +19,10 @@
       <p class="text-justify m-2"><%= list.name %> - event date <%= list.event_date %></p>
     </span>
     <span class="card-footer">
-
+      <% if list.user == current_user %>
+        <%= link_to 'Add Gift', new_list_gift_path(list), class: "btn btn-primary" %>
+      <% end %>
+        <%= link_to 'View List', list_path(list), class: "btn btn-primary" %>
     </span>
   </div>
 <% end %>

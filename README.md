@@ -13,6 +13,14 @@ This project was conceived to enable me to practice using Ruby on Rails, followi
 6. run `npm install`
 7. install yarn `npm install yarn -g`
 
+## Progress notes
+03/03/2021 - added gifts controller. Linkage between that and lists needs fixing, as 4 tests are currently failing. Also, can't currently add a gift to a list, or display gifts.  One gift added to list directly via tableplus, for display purposes.
+
+### Next time 
+1. try to get non gift-related tests working again
+2. work out why system doesn't like @list.gifts...
+3. Remember that you need to use a separate terminal, as the terminal inside VS-code defaults to ruby 2.7.1 and won't change when instructed.
+
 ## Planning
 
 ### Entity Relationship Diagrams
