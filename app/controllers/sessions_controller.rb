@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
       flash[:notice] = 'Signed in successfully'
-      redirect_to root_path # temporary redirect until lists is set up
+      redirect_to lists_url
     else
       flash.now[:alert] = 'Invalid login details'
       render 'new'

@@ -1,13 +1,15 @@
 # frozen_string_literal: true
 
 class ListsController < ApplicationController
-  before_action :find_list, only: %i[edit update destroy]
+  before_action :find_list, only: %i[edit update destroy show]
 
   def index
     @lists = List.all
   end
 
-  def show; end
+  def show
+    @gift = Gift.new
+  end
 
   def new
     @list = List.new
