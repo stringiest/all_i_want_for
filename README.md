@@ -15,11 +15,12 @@ This project was conceived to enable me to practice using Ruby on Rails, followi
 
 ## Progress notes
 03/03/2021 - added gifts controller. Linkage between that and lists needs fixing, as 4 tests are currently failing. Also, can't currently add a gift to a list, or display gifts.  One gift added to list directly via tableplus, for display purposes.
+01/07/2021 - fixed non-gift-related tests, upgraded ruby version to 2.7.1 in gem file, added ability to add and delete a gift from a list
 
 ### Next time 
-1. try to get non gift-related tests working again
-2. work out why system doesn't like @list.gifts...
-3. Remember that you need to use a separate terminal, as the terminal inside VS-code defaults to ruby 2.7.1 and won't change when instructed.
+1. try to get test to delete a gift to work
+2. direct home page to 'My lists', rename the heading to this on /lists
+3. add links to return to /lists on individual list page
 
 ## Planning
 
