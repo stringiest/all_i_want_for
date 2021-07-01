@@ -21,6 +21,7 @@ This project was conceived to enable me to practice using Ruby on Rails, followi
 1. try to get test to delete a gift to work
 2. direct home page to 'My lists', rename the heading to this on /lists
 3. add links to return to /lists on individual list page
+4. Try to fix travis.yml - removed  "bundle install --jobs=3 --retry=3" from the before script section, as it had an implied deployment flag that had become deprecated, but build still failed.
 
 ## Planning
 
