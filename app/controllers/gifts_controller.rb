@@ -1,9 +1,9 @@
 class GiftsController < ApplicationController
   before_action :find_list
   
-  def index
-    @gifts = Gift.all
-  end
+  # def index
+  #   @gifts = Gift.all
+  # end
 
   def new
     @gift = Gift.new
@@ -18,8 +18,9 @@ class GiftsController < ApplicationController
   # end
 
   def create
-    @gift = Gift.new(user_id: session[:user_id], list_id: session[:list_id], name: params[:gift][:name], 
-                    url: params[:gift][:url], notes: params[:gift][:notes])
+      @gift = @list.gifts.create(gift_params)
+    # @gift = Gift.new(user_id: session[:user_id], list_id: session[:list_id], name: params[:gift][:name], 
+    #                 url: params[:gift][:url], notes: params[:gift][:notes])
     if @gift.save
       redirect_to lists_url
     else
@@ -46,7 +47,7 @@ class GiftsController < ApplicationController
   private
 
   def gift_params
-    params.require(:gift).permit(:name, :url, :age).merge(user_id: params[:user_id])
+    params.require(:gift).permit(:name, :url, :image, :notes).merge(user_id: current_user.id)
   end
 
   def find_list
