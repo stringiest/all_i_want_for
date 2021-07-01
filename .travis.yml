@@ -7,7 +7,6 @@ services:
 before_install:
   - nvm install --lts
 before_script:
-  - bundle install --jobs=3 --retry=3
   - bundle config set deployment 'true'
   - yarn
   - bundle exec rake db:create
