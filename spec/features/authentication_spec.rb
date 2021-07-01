@@ -7,7 +7,7 @@ feature 'authentication' do
     create_user_in_test_db
     login_successfully
 
-    expect(current_path).to eq('/')
+    expect(current_path).to eq('/lists')
     expect(page).to have_content('Signed in successfully')
   end
 

@@ -9,20 +9,10 @@ class GiftsController < ApplicationController
     @gift = Gift.new
   end
 
-  # def create
-  #   @gift = @list.gifts.create(gift_params)
-    
-  #   respond_to do |format|
-  #     format.js
-  #   end
-  # end
-
   def create
       @gift = @list.gifts.create(gift_params)
-    # @gift = Gift.new(user_id: session[:user_id], list_id: session[:list_id], name: params[:gift][:name], 
-    #                 url: params[:gift][:url], notes: params[:gift][:notes])
     if @gift.save
-      redirect_to lists_url
+      redirect_to list_path(params[:list_id])
     else
       render 'new'
     end
@@ -32,7 +22,7 @@ class GiftsController < ApplicationController
 
   def update
     if @gift.update(gift_params)
-      redirect_to lists_url
+      redirect_to list_path(params[:list_id])
     else
       render 'edit'
     end
@@ -41,7 +31,7 @@ class GiftsController < ApplicationController
   def destroy
     @gift = @list.gifts.find(params[:id])
     @gift.destroy
-    redirect_to lists_url
+    redirect_to list_path(params[:list_id])
   end
 
   private

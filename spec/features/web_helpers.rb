@@ -28,3 +28,11 @@ def login_and_make_list
 
   click_button('Submit')
 end
+
+def add_gift_to_list
+  click_link('Add Gift')
+  fill_in('gift_name', with: 'Vintage teapot')
+  fill_in('gift_url', with: 'www.example.com')
+  fill_in('gift_notes', with: 'Any chintzy teapot with gold bits!')
+  click_button('Add Gift')
+end
