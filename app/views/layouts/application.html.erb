@@ -18,7 +18,8 @@
         <% if current_user %>
         <span>
           Welcome, <%= current_user.username %>
-          <a href="/lists/new" class="btn btn-primary ml-4 px-2 py-1">New List</a>
+          <a href="/lists" class="btn btn-primary ml-4 px-2 py-1">My Lists</a>
+          <a href="/lists/new" class="btn btn-success ml-4 px-2 py-1">New List</a>
           <%= link_to 'Sign Out', logout_path, class: "btn btn-danger ml-4" %>
         </span>
       <% else %>
