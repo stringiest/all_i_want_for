@@ -1,13 +1,10 @@
-<h1 class="text-center" style="font-weight: lighter;">List details</h1>
+<h1 class="text-center" style="font-weight: lighter;"><%= @list.user.username.capitalize %>'s List</h1>
 <div class="card my-5 mx-auto" style="width: 80%;" id="list-container">
   <span class="card-header">
     <b>
-      <%= @list.user.username.capitalize %>
+    <%= @list.name %> - <%= @list.event_date.strftime("%d/%m/%Y") %>
     </b>
-    <i>
-      created
-      <%= time_ago_in_words(@list.created_at) %> ago
-    </i>
+
     <% if @list.user == current_user %>
     <span style="float: right;">
         <%= link_to 'Add Gift', new_list_gift_path(@list), class: "btn btn-primary" %>
@@ -17,7 +14,7 @@
     <% end %>
   </span>
   <span class="d-inline-flex">
-    <p class="text-justify m-2"><%= @list.name %></p>
+    <p></p>
   </span>
 
   <br>
