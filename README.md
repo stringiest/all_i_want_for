@@ -16,12 +16,12 @@ This project was conceived to enable me to practice using Ruby on Rails, followi
 ## Progress notes
 03/03/2021 - added gifts controller. Linkage between that and lists needs fixing, as 4 tests are currently failing. Also, can't currently add a gift to a list, or display gifts.  One gift added to list directly via tableplus, for display purposes.
 01/07/2021 - fixed non-gift-related tests, upgraded ruby version to 2.7.1 in gem file, added ability to add and delete a gift from a list
+05/07/2021 - added link to return to /lists to nav bar, added welcome blurb on root page, some styling
 
 ### Next time 
 1. try to get test to delete a gift to work
-2. direct home page to 'My lists', rename the heading to this on /lists
-3. add links to return to /lists on individual list page
-4. Try to fix travis.yml - removed  "bundle install --jobs=3 --retry=3" from the before script section, as it had an implied deployment flag that had become deprecated, but build still failed.
+2. Try to fix travis.yml - removed  "bundle install --jobs=3 --retry=3" from the before script section, as it had an implied deployment flag that had become deprecated, but build still failed.
+3. Work on colours to tie them in with the logo.
 
 ## Planning
 
