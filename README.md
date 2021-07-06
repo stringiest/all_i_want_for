@@ -1,4 +1,8 @@
 # All I Want For ...
+
+[About](#About) | [Quick Start](#Quick-Start) | [Tech Stack](#Tech-Stack)
+
+## About
 Personal project to build a website where users can create & share gift wish lists.  
 
 This project was conceived to enable me to practice using Ruby on Rails, following a Makers group project using the same stack.
@@ -17,11 +21,23 @@ This project was conceived to enable me to practice using Ruby on Rails, followi
 03/03/2021 - added gifts controller. Linkage between that and lists needs fixing, as 4 tests are currently failing. Also, can't currently add a gift to a list, or display gifts.  One gift added to list directly via tableplus, for display purposes.
 01/07/2021 - fixed non-gift-related tests, upgraded ruby version to 2.7.1 in gem file, added ability to add and delete a gift from a list
 05/07/2021 - added link to return to /lists to nav bar, added welcome blurb on root page, some styling
+06/07/2021 - replaced Travis CI with Github Actions for CI. Updated website logo.
 
 ### Next time 
-1. try to get test to delete a gift to work
-2. Try to fix travis.yml - removed  "bundle install --jobs=3 --retry=3" from the before script section, as it had an implied deployment flag that had become deprecated, but build still failed.
+1. Try to get test to delete a gift to work
+2. Try to get test to delete a list to work
 3. Work on colours to tie them in with the logo.
+
+## Tech Stack
+
+|Framework| Ruby on Rails|
+|Language   | Ruby|
+|Linting| Rubocop|
+|Testing|   Rspec & Capybara|
+|Coverage| SimpleCov|
+|Database| PostgreSQL|
+|CI| Github Actions|
+|Styling| Bootstrap|
 
 ## Planning
 
@@ -36,8 +52,8 @@ Entity relationship diagram for tables excluding friendships:
 - [x] Linted with Rubocop
 - [x] Tested with Rspec & Capybara
 - [x] Test coverage checked using SimpleCov
-- [x] CI through Travis CI
-- [ ] Styled using Bootstrap - investigate using colour palettes
+- [x] CI through Github Actions
+- [x] Styled using Bootstrap - investigate using colour palettes
 - [x] Deployed via Heroku
 - [x] Progress tracked via Github Projects
 
