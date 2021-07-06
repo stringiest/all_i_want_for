@@ -19,6 +19,8 @@ This project was conceived to enable me to practice using Ruby on Rails, followi
 
 ## Tech Stack
 
+|Use        | Technology|
+|--------|--------|
 |Framework| Ruby on Rails|
 |Language   | Ruby|
 |Linting| Rubocop|
