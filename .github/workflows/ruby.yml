@@ -66,3 +66,6 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Run yarn
       run: yarn
+    - name: Create DB
+        run: |
+          bin/rails db:prepare
