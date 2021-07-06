@@ -45,6 +45,14 @@ jobs:
         # E.g. use [0, 1] for 2 parallel jobs, [0, 1, 2] for 3 parallel jobs, etc.
         ci_node_index: [0, 1, 2, 3, 4, 5, 6, 7]
         ruby-version: ['2.7.1']
+    
+    env:
+      RAILS_ENV: test
+      GEMFILE_RUBY_VERSION: 2.7.1
+      PGHOST: localhost
+      PGUSER: postgres
+      # Rails verifies the time zone in DB is the same as the time zone of the Rails app
+      TZ: "Europe/London"
 
     steps:
     - uses: actions/checkout@v2
