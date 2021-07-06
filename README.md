@@ -17,17 +17,6 @@ This project was conceived to enable me to practice using Ruby on Rails, followi
 6. run `npm install`
 7. install yarn `npm install yarn -g`
 
-## Progress notes
-03/03/2021 - added gifts controller. Linkage between that and lists needs fixing, as 4 tests are currently failing. Also, can't currently add a gift to a list, or display gifts.  One gift added to list directly via tableplus, for display purposes.
-01/07/2021 - fixed non-gift-related tests, upgraded ruby version to 2.7.1 in gem file, added ability to add and delete a gift from a list
-05/07/2021 - added link to return to /lists to nav bar, added welcome blurb on root page, some styling
-06/07/2021 - replaced Travis CI with Github Actions for CI. Updated website logo.
-
-### Next time 
-1. Try to get test to delete a gift to work
-2. Try to get test to delete a list to work
-3. Work on colours to tie them in with the logo.
-
 ## Tech Stack
 
 |Framework| Ruby on Rails|
@@ -41,116 +30,7 @@ This project was conceived to enable me to practice using Ruby on Rails, followi
 
 ## Planning
 
-### Entity Relationship Diagrams
-
-Entity relationship diagram for tables excluding friendships:
-
-![Entity relationship diagram for tables excluding friendships](/app/assets/images/ERD_excl_friendships.png)
-
-### Planning Notes
-- [x] Rails project
-- [x] Linted with Rubocop
-- [x] Tested with Rspec & Capybara
-- [x] Test coverage checked using SimpleCov
-- [x] CI through Github Actions
-- [x] Styled using Bootstrap - investigate using colour palettes
-- [x] Deployed via Heroku
-- [x] Progress tracked via Github Projects
-
-### User Stories
-
-#### Minimum Viable Product:
-
-```
-As a user
-So that I can set up gift lists
-I want to be able to register for 'All I Want For'
-```
-
-```
-As a user
-So that I can store my list securely
-I want to be able to log in to 'All I Want For'
-```
-
-```
-As a user
-So that my account remains secure
-I want to be able to log out of 'All I Want For'
-```
-
-```
-As a user
-So that I can record what I want
-I want to be able to create a gift list
-```
-
-```
-As a user
-So that I can request gifts
-I want to be able to add items to my gift list
-```
-
-#### Second tranche:
-
-```
-As a user
-In case the details change
-I want to be able to amend items on my gift list
-```
-
-```
-As a user
-In case I buy things for myself
-I want to be able to delete items from my gift list
-```
-
-```
-As a user
-So that I can let my friends & family know what I want
-I want to be able to generate a link to my list
-```
-
-```
-As a user
-So that I don't receive duplicate gifts
-I want people to be able to mark gifts as bought
-```
-
-```
-As a user
-So that I can manage my lists
-I want to be able to move items between lists
-```
-
-```
-As a user
-So that I can keep my lists relevant
-I want to be able to archive old lists
-```
-
-```
-As a user
-So that I only receive relevant gifts
-I want to receive a reminder to update my list a month before my birthday
-```
-
-#### Third Tranche
-
-```
-As a user
-So that I can keep up to date with my friends' gift ideas
-I want to be able to add friends
-```
-
-```
-As a user
-So that I can buy a gift
-I want to be able to view my friends' lists
-```
-
-```
-As a user
-So that I don't forget my friends' birthdays
-I want to receive a reminder email
-```
+I used the github wiki to plan the project and track my progress:
+- [User Stories](https://github.com/stringiest/all_i_want_for/wiki/02.-MVP-&-User-Stories) drive features
+- [Entity Relationship Diagramming](https://github.com/stringiest/all_i_want_for/wiki/03.-Diagramming) helped plan out the database structure
+- I created a list of aspirations for [future features](https://github.com/stringiest/all_i_want_for/wiki/06.-Future-Features)
