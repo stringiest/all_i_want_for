@@ -67,4 +67,6 @@ jobs:
     - name: Run yarn
       run: yarn
     - name: Create DB
-      run: bin/rails db:prepare
+      run: bin/rails db:prepare # creates DB, loads the scheme and seeds the DB
+    - name: Run tests
+      run: bundle exec rspec
