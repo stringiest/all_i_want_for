@@ -67,5 +67,4 @@ jobs:
     - name: Run yarn
       run: yarn
     - name: Create DB
-        run: |
-          bin/rails db:prepare
+        run: bin/rails db:prepare
